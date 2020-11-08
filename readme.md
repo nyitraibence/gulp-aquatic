@@ -11,7 +11,9 @@ For installation, you need to have [node.js](https://nodejs.org/en/) on your com
 2. **Navigate** into that folder in the **command line**
 2. if you don't have the global gulp-cli, install it:&nbsp;&nbsp; `npm install --global gulp-cli`
 3. **Install** the project dependencies:&nbsp;&nbsp; `npm i`
+4. Run the `gulp` command to initially build and create your asset files
 
+And you're ready to go. To start development run gulp's watch mode, `gulp watch`.
 
 ## Usage
 Two main tasks, accessible via the gulp-cli:
