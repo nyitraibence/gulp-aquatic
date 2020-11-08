@@ -1,6 +1,6 @@
 # 🌊 &nbsp;&nbsp;gulp-aquatic
 
-Aquatic is a gulp based forntend workflow optimized for classic sitebuild and wordpress theme development.
+Aquatic is a gulp based frontend workflow optimized for classic sitebuild and wordpress theme development.
 
 
 ## Installation
@@ -33,6 +33,8 @@ Two main tasks, accessible via the gulp-cli:
 
 Some of these sub-tasks can be run separately aswell, if needed. See `gulp --tasks` for options. Easily extensible with additional features in the pipeline. You can find more help with this in the Gulp Documentation: [https://gulpjs.com/docs/en/getting-started/quick-start/](https://gulpjs.com/docs/en/getting-started/quick-start/)
 
+The browserSync will not work if the html/php template doesn't have a body tag. It's just how the module works.
+
 ### Notes:
 - gulp-terser is used instead of popular gulp-uglify: In the field of Js compression terser shows slightly better performance, and it is ES6 compatible - uglify is not.
 - Media query grouping is omitted from the pipeline. According to my researches, grouped/ungrouped media querys barely show any difference in performance, even in larger projects. And the less step there is in the pipeline, the faster, cleaner it is. Therefore, it is omitted.
@@ -40,10 +42,12 @@ Some of these sub-tasks can be run separately aswell, if needed. See `gulp --tas
 Choosing BrowserSync over Livereload: It is not constrained to a single device, it works across desktop and mobile devices at the same time. It will update code changes, synchronize scroll positions and form inputs automatically across all browsers and devices. Also it doesn't need a browser plugin.
 More: [https://www.slant.co/versus/5065/5066/~livereload_vs_browsersync](https://www.slant.co/versus/5065/5066/~livereload_vs_browsersync)
 -->
+- Gulpfile path expressions: one place where you can truly save execution time is the file source regex. The more specific path you give, the faster it will find what it needs. The current version uses pretty generic paths, yet fast. If your project structure allows, give it exactly where to look, and not 'everywhere' with exceptions. If you want to place your file in a random place, no problem, just specify that random place for gulp.
 
 #### To be added:
 - cache busting
 - error screens
+- babel?
 
 ***
 
