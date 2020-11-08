@@ -19,7 +19,6 @@ Two main tasks, accessible via the gulp-cli:
 ### `gulp watch` - for development
 
 * Concatenates Js and SCSS Source files
-* Creates a sourcemap
 * Compiles SCSS to CSS
 * Watches the files and reloads the browser on source change
 
@@ -44,10 +43,11 @@ More: [https://www.slant.co/versus/5065/5066/~livereload_vs_browsersync](https:/
 -->
 - Gulpfile path expressions: one place where you can truly save execution time is the file source regex. The more specific path you give, the faster it will find what it needs. The current version uses pretty generic paths, yet fast. If your project structure allows, give it exactly where to look, and not 'everywhere' with exceptions. If you want to place your file in a random place, no problem, just specify that random place for gulp.
 
-#### To be added:
+#### Handy features to add:
 - cache busting
 - error screens
-- babel?
+- sourcemaps
+- babel
 
 ***
 
