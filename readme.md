@@ -1,6 +1,6 @@
 # 🌊 &nbsp;&nbsp;gulp-aquatic
 
-Aquatic is a gulp based frontend workflow optimized for classic sitebuild and wordpress theme development.
+Aquatic is a lightweight gulp based frontend workflow optimized for classic sitebuild and wordpress theme development.
 
 
 ## Installation
