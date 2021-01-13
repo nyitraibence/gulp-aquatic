@@ -77,7 +77,11 @@ function minifyCSS() {
         .pipe(rename({
             extname: '.min.css'
         }))
-        .pipe(cssnano())
+        .pipe(cssnano({
+            autoprefixer: {
+                remove: false
+            }
+        }))
         .pipe(dest(paths.styles.dest));
 }
 
